@@ -95,9 +95,6 @@ Load Balancers act as traffic cops, distributing client requests across servers 
 
 Understanding how data travels between client and server is key to designing high-performance systems.
 
-```mermaid
-table
-```
 ### Protocols at a Glance
 
 | Protocol | OSI Layer | Key Characteristic | Ideal Use Case |
