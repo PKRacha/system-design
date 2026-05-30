@@ -9,25 +9,18 @@ This module provides a step-by-step, highly interactive playbook to guide you th
 A successful system design interview is not a monologue; it is an active, structured collaboration between you and the interviewer. Follow these five core phases to navigate the interview seamlessly:
 
 ```mermaid
-graph LR
-    %% Define Styles
-    classDef step fill:#e8f5e9,stroke:#4caf50,stroke-width:2px,color:#1b5e20;
-    classDef action fill:#fff3e0,stroke:#ff9800,stroke-width:2px,color:#e65100;
-    
-    Step1["Step 1: Clarify & Scope"] --> Step2["Step 2: Scale Estimation"]
-    Step2 --> Step3["Step 3: High-Level Design"]
-    Step3 --> Step4["Step 4: Component Deep Dive"]
-    Step4 --> Step5["Step 5: Review & Refine"]
+graph TD
+    Step1("Step 1: Clarify & Scope") --> Step2("Step 2: Scale Estimation")
+    Step2 --> Step3("Step 3: High-Level Design")
+    Step3 --> Step4("Step 4: Component Deep Dive")
+    Step4 --> Step5("Step 5: Review & Refine")
     
     %% Details
-    Step1 -.->|"Functional & Non-Functional"| Act1["📝 Ask clarifying questions"]
-    Step2 -.->|"QPS, Memory, Storage"| Act2["🧮 Back-of-the-envelope calculations"]
-    Step3 -.->|"Block Diagram / Flows"| Act3["🤝 Confirm with Interviewer"]
-    Step4 -.->|"Bottlenecks, DB, Cache"| Act4["⚡ Tune & Scale Components"]
-    Step5 -.->|"Faults, Mistakes, Fixes"| Act5["🔄 Iterate & Improve"]
-    
-    class Step1,Step2,Step3,Step4,Step5 step;
-    class Act1,Act2,Act3,Act4,Act5 action;
+    Step1 -.->|"Functional & Non-Functional"| Act1("📝 Ask clarifying questions")
+    Step2 -.->|"QPS, Memory, Storage"| Act2("🧮 Back-of-the-envelope calculations")
+    Step3 -.->|"Block Diagram / Flows"| Act3("🤝 Confirm with Interviewer")
+    Step4 -.->|"Bottlenecks, DB, Cache"| Act4("⚡ Tune & Scale Components")
+    Step5 -.->|"Faults, Mistakes, Fixes"| Act5("🔄 Iterate & Improve")
 ```
 
 ---

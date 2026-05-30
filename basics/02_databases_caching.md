@@ -14,18 +14,14 @@ The CAP Theorem states that a distributed data store can simultaneously provide 
 ```mermaid
 graph TD
     %% Nodes
-    C["Consistency (Strong)<br>All nodes see the same data at the same time."]
-    A["Availability<br>Every non-failing node returns a response."]
-    P["Partition Tolerance<br>System continues to operate despite packet loss."]
+    C("Consistency (Strong)<br>All nodes see the same data at the same time.")
+    A("Availability<br>Every non-failing node returns a response.")
+    P("Partition Tolerance<br>System continues to operate despite packet loss.")
     
     %% Overlaps
     C --- A
     A --- P
     P --- C
-    
-    style C fill:#ffebee,stroke:#c62828,stroke-width:2px;
-    style A fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    style P fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
 ```
 
 > [!IMPORTANT]
@@ -110,15 +106,11 @@ When a database becomes the bottleneck, apply these scaling techniques:
 
 ```mermaid
 graph LR
-    UserWrite["✍️ Writes"] --> Primary[("🗄️ Primary Database")]
-    Primary -->|Async Replication| R1[("📖 Replica A")]
-    Primary -->|Async Replication| R2[("📖 Replica B")]
+    UserWrite("✍️ Writes") --> Primary("🗄️ Primary Database")
+    Primary -->|Async Replication| R1("📖 Replica A")
+    Primary -->|Async Replication| R2("📖 Replica B")
     
-    UserRead["🔍 Reads"] --> R1 & R2
-    
-    style Primary fill:#ffe0b2,stroke:#fb8c00,stroke-width:2px;
-    style R1 fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
-    style R2 fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
+    UserRead("🔍 Reads") --> R1 & R2
 ```
 
 ---

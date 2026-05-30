@@ -10,14 +10,9 @@ When designing any production-grade system, jumping straight into coding or deta
 
 ```mermaid
 flowchart LR
-    A["1. Clarify Requirements<br>(Functional & Non-Functional)"] --> B["2. Scale Estimation<br>(QPS, Storage, Bandwidth)"]
-    B --> C["3. High-Level Design<br>(Block Diagram / Core flow)"]
-    C --> D["4. Component Deep Dive<br>(Bottlenecks, Scaling, Trade-offs)"]
-    
-    style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
-    style B fill:#f1f8e9,stroke:#558b2f,stroke-width:2px;
-    style C fill:#fff8e1,stroke:#ff8f00,stroke-width:2px;
-    style D fill:#fbe9e7,stroke:#d84315,stroke-width:2px;
+    A("1. Clarify Requirements<br>(Functional & Non-Functional)") --> B("2. Scale Estimation<br>(QPS, Storage, Bandwidth)")
+    B --> C("3. High-Level Design<br>(Block Diagram / Core flow)")
+    C --> D("4. Component Deep Dive<br>(Bottlenecks, Scaling, Trade-offs)")
 ```
 
 ### Back-of-the-Envelope Scale Calculations
@@ -41,21 +36,15 @@ To handle increasing traffic or data volume, systems must scale.
 ```mermaid
 graph TD
     subgraph Vertical ["Vertical Scaling (Scale Up)"]
-        V1["💻 Single Server<br>(Upgrade CPU, RAM, Disk)"]
+        V1("💻 Single Server<br>(Upgrade CPU, RAM, Disk)")
     end
     
     subgraph Horizontal ["Horizontal Scaling (Scale Out)"]
-        H1["💻 Server A"]
-        H2["💻 Server B"]
-        H3["💻 Server C"]
-        LB["⚖️ Load Balancer"] --> H1 & H2 & H3
+        H1("💻 Server A")
+        H2("💻 Server B")
+        H3("💻 Server C")
+        LB("⚖️ Load Balancer") --> H1 & H2 & H3
     end
-    
-    style V1 fill:#efebe9,stroke:#4e342e,stroke-width:2px;
-    style H1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    style H2 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    style H3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    style LB fill:#ede7f6,stroke:#651fff,stroke-width:2px;
 ```
 
 ### Comparison Matrix

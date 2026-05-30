@@ -11,11 +11,11 @@ Engineers must optimize code and infrastructure depending on the primary perform
 ```mermaid
 graph LR
     subgraph Latency ["Latency (Speed)"]
-        L["⏱️ Time taken to complete a single transaction.<br>Target: milliseconds (ms)."]
+        L("⏱️ Time taken to complete a single transaction.<br>Target: milliseconds (ms).")
     end
     
     subgraph Throughput ["Throughput (Capacity)"]
-        T["📊 Number of transactions processed per second (TPS).<br>Target: Requests Per Second (RPS) or QPS."]
+        T("📊 Number of transactions processed per second (TPS).<br>Target: Requests Per Second (RPS) or QPS.")
     end
 ```
 
@@ -48,20 +48,15 @@ graph LR
 ```mermaid
 graph TD
     subgraph ActiveActive ["Active-Active Failover (Preferred)"]
-        LB1["⚖️ Load Balancer"] --> S_A["💻 Active Server A"]
-        LB1 --> S_B["💻 Active Server B"]
+        LB1("⚖️ Load Balancer") --> S_A("💻 Active Server A")
+        LB1 --> S_B("💻 Active Server B")
     end
     
     subgraph ActivePassive ["Active-Passive Failover"]
-        LB2["⚖️ Load Balancer"] --> S_C["💻 Active Server (Main)"]
-        S_C -.->|Heartbeat fails| S_D["💤 Passive Server (Standby)"]
+        LB2("⚖️ Load Balancer") --> S_C("💻 Active Server (Main)")
+        S_C -.->|Heartbeat fails| S_D("💤 Passive Server (Standby)")
         LB2 -.->|Failover route| S_D
     end
-    
-    style S_A fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    style S_B fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    style S_C fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    style S_D fill:#ffebee,stroke:#c62828,stroke-width:2px;
 ```
 
 ---
@@ -108,17 +103,13 @@ To optimize cost while maintaining low latency, architects separate data based o
 
 ```mermaid
 graph TD
-    Data[("🗃️ System Data")] --> Hot["🔥 Hot Storage (Frequent access)"]
-    Data --> Warm["🌤️ Warm Storage (Occasional access)"]
-    Data --> Cold["❄️ Cold Storage (Rare access)"]
+    Data("🗃️ System Data") --> Hot("🔥 Hot Storage (Frequent access)")
+    Data --> Warm("🌤️ Warm Storage (Occasional access)")
+    Data --> Cold("❄️ Cold Storage (Rare access)")
     
-    Hot -->|"Redis / SSDs<br>(Fastest, Expensive)"| Out1["⏱️ Sub-millisecond latency"]
-    Warm -->|"Standard HDD / Relational DB"| Out2["⏱️ Millisecond latency"]
-    Cold -->|"Amazon S3 Glacier / Tape<br>(Slowest, Extremely Cheap)"| Out3["⏱️ Hours retrieval latency"]
-    
-    style Hot fill:#ffebee,stroke:#c62828,color:#b71c1c;
-    style Warm fill:#fff8e1,stroke:#f57f17,color:#e65100;
-    style Cold fill:#e3f2fd,stroke:#0d47a1,color:#0d47a1;
+    Hot -->|"Redis / SSDs<br>(Fastest, Expensive)"| Out1("⏱️ Sub-millisecond latency")
+    Warm -->|"Standard HDD / Relational DB"| Out2("⏱️ Millisecond latency")
+    Cold -->|"Amazon S3 Glacier / Tape<br>(Slowest, Extremely Cheap)"| Out3("⏱️ Hours retrieval latency")
 ```
 
 *   **Hot Data:** User profiles, active sessions, trending feeds. Stored in RAM (Redis) or high-speed NVMe SSDs.
