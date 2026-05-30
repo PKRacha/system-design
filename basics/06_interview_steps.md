@@ -1,4 +1,4 @@
-# 🎯 Part 5: The System Design Interview Blueprint
+# 🎯 Part 6: The System Design Interview Blueprint
 
 In this guide, we will look at how to tackle a System Design interview. It is a step-by-step roadmap that shows you how to organize your thoughts, talk to your interviewer, draw your diagrams, and fix mistakes on the fly!
 

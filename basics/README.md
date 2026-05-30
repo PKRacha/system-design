@@ -34,7 +34,7 @@ graph TD
 
 ## 🗂️ What You Will Learn
 
-We broke this guide down into 5 easy parts:
+We broke this guide down into 6 easy parts:
 
 | Part | What it is about | Why it matters | Link |
 | :--- | :--- | :--- | :--- |
@@ -42,12 +42,13 @@ We broke this guide down into 5 easy parts:
 | **02. Databases & Caching** | How we save information and make it fast. | Keeps your data safe and stops things from being slow. | [Read Part 2 ➔](./02_databases_caching.md) |
 | **03. Reliability & APIs** | How computers talk and handle errors. | Keeps your app working even when parts of it break. | [Read Part 3 ➔](./03_reliability_apis.md) |
 | **04. System Speed & Uptime** | How to keep your system fast and always on. | Makes sure users have a great, snappy experience. | [Read Part 4 ➔](./04_system_characteristics.md) |
-| **05. Interview Playbook** | How to ace your system design interview. | A simple, step-by-step plan to impress interviewers. | [Read Part 5 ➔](./05_interview_steps.md) |
+| **05. Cloud Comparison** | Comparing services across AWS, GCP, and Azure. | Helps you map terms to real-world cloud tools. | [Read Part 5 ➔](./05_cloud_comparison.md) |
+| **06. Interview Playbook** | How to ace your system design interview. | A simple, step-by-step plan to impress interviewers. | [Read Part 6 ➔](./06_interview_steps.md) |
 
 ---
 
 ## 🎯 How to Use This Guide
 
-1.  **Read in order:** If you are new, start with Part 1 and go through to Part 5.
+1.  **Read in order:** If you are new, start with Part 1 and go through to Part 6.
 2.  **Look at the pictures:** We included simple diagrams to show you exactly how data flows.
 3.  **Use it as a cheat sheet:** Keep this open when you are studying or working on a project to quickly look up terms!
