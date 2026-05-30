@@ -113,4 +113,4 @@ graph TD
 ---
 
 ### Next Module:
-👉 [**Part 5: The System Design Interview Blueprint**](./05_interview_steps.md)
+👉 [**Part 5: Cloud Services Comparison Chart**](./05_cloud_comparison.md)

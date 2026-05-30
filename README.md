@@ -66,7 +66,14 @@ Check out the detailed guides inside our **[Basics Directory](./basics/)**:
 - Asynchronous Processing (Using Message Queues to do heavy work in the background)
 - Hot vs. Cold Storage (Using fast SSDs for popular data and cheap tape vaults for backups)
 
-### 🎯 [5. The System Design Interview Blueprint](./basics/05_interview_steps.md)
+### ☁️ [5. Cloud Services Comparison Chart](./basics/05_cloud_comparison.md)
+*Map theoretical system design tools to real-world cloud products.*
+- DNS (Route 53 vs. Cloud DNS vs. Azure DNS)
+- CDN (CloudFront vs. Cloud CDN vs. Azure Front Door)
+- Databases (RDS vs. Spanner vs. Cosmos DB)
+- Message Queues (SQS vs. Pub/Sub vs. Service Bus)
+
+### 🎯 [6. The System Design Interview Blueprint](./basics/06_interview_steps.md)
 *A simple, step-by-step playbook to ace your system design interviews.*
 - Clarifying requirements and picking core features
 - Quick scale estimations (math calculations)
