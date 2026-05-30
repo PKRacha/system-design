@@ -79,3 +79,11 @@ Check out the detailed guides inside our **[Basics Directory](./basics/)**:
 - Quick scale estimations (math calculations)
 - Drawing high-level architecture maps
 - Reviewing your design and fixing mistakes on the fly
+
+### 🔗 [7. URL Shortener Case Study](./Questions_and_Answers/URL_Shortner/URL_Shortner.md)
+*Designing a highly scalable, fast, and durable URL shortener.*
+- Clarifying questions and read/write scaling ratios
+- Base62 distributed unique ID generation using KGS and Zookeeper
+- Caching strategy using Redis and LRU cache eviction
+- Partitioning DynamoDB data to avoid hot partition issues
+

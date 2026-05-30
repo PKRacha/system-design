@@ -1,2 +1,10 @@
 # Ignore Antigravity persistent workspace rules
 .antigravity_rules
+
+# Ignore local system design generation test outputs
+Questions_and_Answers/URL_Shortner/
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
