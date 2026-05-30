@@ -1,0 +1,16 @@
+# Antigravity AI Coding Assistant Rules & Preferences
+
+To maintain consistent document presentation and tone, all agents working in this repository MUST strictly follow these preferences:
+
+## ✍️ Writing Style & Tone
+*   **Target Level:** Simple 8th-grade English.
+*   **Tone:** Highly conversational, engaging, empathetic, and human-like.
+*   **Guidelines:**
+    *   Avoid overly academic, dry, or dense corporate jargon.
+    *   Use everyday real-world analogies (e.g., comparing load balancers to traffic cops, rate limiters to bouncers).
+    *   Break down complex mathematical estimations or concepts (like CAP/PACELC) into digestible, intuitive explanations.
+    *   Keep sentences short, active, and punchy.
+
+## 🎨 Diagramming Rules
+*   **Mermaid Style:** Always use curvy-cornered rounded nodes (using `node("text")` or similar) with **no custom colors or CSS overrides**.
+*   **Theme Integration:** Let Mermaid diagrams fall back on the default GitHub theme so they cleanly adapt to both Light and Dark modes.
