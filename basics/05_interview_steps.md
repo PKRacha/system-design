@@ -61,9 +61,13 @@ Quantify the scale of your system. This informs your choice of database, network
 
 Draw a clean block diagram representing the end-to-end flow of the request.
 
-```
-[User Client] ➔ [Load Balancer] ➔ [API Gateway] ➔ [Application Service] ➔ [Database]
-                                                       ➔ [Cache (Redis)]
+```mermaid
+graph LR
+    Client("📱 User Client") --> LB("⚖️ Load Balancer")
+    LB --> GW("🛡️ API Gateway")
+    GW --> App("💻 Application Service")
+    App --> DB("🗄️ Database")
+    App --> Cache("🚀 Cache (Redis)")
 ```
 
 > [!IMPORTANT]
