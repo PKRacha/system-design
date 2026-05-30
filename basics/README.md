@@ -22,7 +22,7 @@ graph TD
     %% Nodes
     User(("📱 User Client")) -->|1. DNS Query| DNS["🔍 DNS Resolver"]
     User -->|2. Get Static Assets| CDN["⚡ CDN (Edge)"]
-    User -->|3. Dynamic Request (HTTPS)| LB["⚖️ Load Balancer"]
+    User -->|"3. Dynamic Request (HTTPS)"| LB["⚖️ Load Balancer"]
     
     subgraph App_Layer ["Application & Routing Layer"]
         LB -->|Route traffic| GW["🛡️ API Gateway"]
