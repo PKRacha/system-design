@@ -57,6 +57,7 @@ The concepts are grouped into 4 logical modules designed to build upon each othe
 | **02. Databases & Caching** | CAP/PACELC, SQL/NoSQL, Caching | Strong vs. Eventual Consistency, Cache-Aside, Replication | [Explore Module 02 ➔](./02_databases_caching.md) |
 | **03. Reliability & APIs** | API Styles, Idempotency, Patterns | REST vs. gRPC, Rate Limiting, Circuit Breakers | [Explore Module 03 ➔](./03_reliability_apis.md) |
 | **04. System Characteristics** | HA, Throughput, Low Latency | SLA/SLOs, Message Queues, Keep-Alive, Hot/Cold Storage | [Explore Module 04 ➔](./04_system_characteristics.md) |
+| **05. Interview Blueprint** | Clarifying, Estimating, Refinement | Ask Clarifying Questions, Back-of-the-envelope, Fix Mistakes | [Explore Module 05 ➔](./05_interview_steps.md) |
 
 ---
 

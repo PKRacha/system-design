@@ -123,3 +123,8 @@ graph TD
 
 *   **Hot Data:** User profiles, active sessions, trending feeds. Stored in RAM (Redis) or high-speed NVMe SSDs.
 *   **Cold Data:** Logs from 3 years ago, transactional receipts, system backups. Stored in high-latency, extremely low-cost cloud vaults like Amazon S3 Glacier.
+
+---
+
+### Next Module:
+👉 [**Module 05: The System Design Interview Blueprint**](./05_interview_steps.md)
