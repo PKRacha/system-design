@@ -9,7 +9,7 @@ This module provides a step-by-step, highly interactive playbook to guide you th
 A successful system design interview is not a monologue; it is an active, structured collaboration between you and the interviewer. Follow these five core phases to navigate the interview seamlessly:
 
 ```mermaid
-graph TD
+graph LR
     %% Define Styles
     classDef step fill:#e8f5e9,stroke:#4caf50,stroke-width:2px,color:#1b5e20;
     classDef action fill:#fff3e0,stroke:#ff9800,stroke-width:2px,color:#e65100;
